@@ -5,7 +5,7 @@ define("MYSQL_USER","root");
 define("MYSQL_PASSWORD","");
 class BD{
     private $conexao;
-    public function_construct() {
+    public function__construct() {
         $this->conexao = mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD);
         $banco = mysql_select_db(MYSQL_DBNAME, $this->conexao);
 
