@@ -4,6 +4,8 @@
         <title>Musical</title>
     </head>
     <body>
+        <a href="codigo.php">Codigo</a>
+        <br>
         <table class = "lista">
             <tr>
                 <th>Artista</th>
