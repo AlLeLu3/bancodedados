@@ -12,7 +12,8 @@
                 <th></th>
             </tr>
             <?php
-            include_once("Musical.class.php");
+            require_once __DIR__."/vendor/autoload.php";
+            
             $m = new Musical();
             $musicais = $m->selecionarTodos();
             if(is_array($musicais)){
@@ -21,8 +22,8 @@
                     echo "<td>".$musical["artista"]."</td>";
                     echo "<td>".$musical["local"]."</td>";
                     echo "<td>".$musical["dia"]."</td>";
-                    echo "<td><a href='formmusical.php?acao=altera&idmusical=".$musical["idmusical"]."'>Alterar</a>";
-                    echo "<a href='formmusical.php?acao=deleta&idmusical=".$musical["idmusical"]."'>Deletar</a></td>";
+                    echo "<td><a href='formmusical.php?acao=altera&idmusica=".$musical["idmusica"]."'>Alterar</a>";
+                    echo "<a href='formmusical.php?acao=deleta&idmusica=".$musical["idmusica"]."'>Deletar</a></td>";
                     echo "</tr>";
 
                 }

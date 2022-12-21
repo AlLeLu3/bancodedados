@@ -1,0 +1,15 @@
+{
+    "name": "luana.maurer/bd",
+    "authors": [
+        {
+            "name": "luana111",
+            "email": "108066898+luana111@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4": {
+            "":"src/"
+        }
+    }
+}
